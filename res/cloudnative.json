@@ -1,0 +1,497 @@
+{
+    "url": "http://localhost:3000/dev/",
+    "entities": [
+        {
+            "url": "rulesets",
+            "entities":[
+                {
+                    "id": "0000000",
+                    "name": "NFL Initial",
+                    "pointsForCorrectWinner": 15,
+                    "pointsForCorrectTurnovers": 5,
+                    "pointsForCorrectOverallScore": 10,
+                    "pointsForCorrectScoreDifference": {
+                        "low": 5,
+                        "medium": 10,
+                        "high": 15
+                    }
+                }
+            ]
+        },
+        {
+            "url": "leagues",
+            "entities":[
+                {
+                    "id": "0000000",
+                    "name": "NFL",
+                    "sportType": "American Football",
+                    "year": "2020",
+                    "ruleset": {
+                        "id": "0000000",
+                        "rules": {
+                            "name": "NFL Initial",
+                            "pointsForCorrectWinner": 15,
+                            "pointsForCorrectTurnovers": 5,
+                            "pointsForCorrectOverallScore": 10,
+                            "pointsForCorrectScoreDifference": {
+                                "low": 5,
+                                "medium": 10,
+                                "high": 15
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "0000001",
+                    "name": "XFL",
+                    "sportType": "American Football",
+                    "year": "2020",
+                    "ruleset": {
+                        "id": "0000000",
+                        "rules": {
+                            "name": "NFL Initial",
+                            "pointsForCorrectWinner": 15,
+                            "pointsForCorrectTurnovers": 15,
+                            "pointsForCorrectOverallScore": 15,
+                            "pointsForCorrectScoreDifference": {
+                                "low": 5,
+                                "medium": 10,
+                                "high": 15
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "url": "leagues/0000000/teams",
+            "entities": [
+                {
+                    "id": "0000000",
+                    "city": "Arizona",
+                    "name": "Cardinals",
+                    "shortName": "ARZ"
+                },
+                {
+                    "id": "0000001",
+                    "city": "Atlanta",
+                    "name": "Falcons",
+                    "shortName": "ATL"
+                },
+                {
+                    "id": "0000002",
+                    "city": "Carolina",
+                    "name": "Panthers",
+                    "shortName": "CAR"
+                },
+                {
+                    "id": "0000003",
+                    "city": "Chicago",
+                    "name": "Bears",
+                    "shortName": "CHI"
+                },
+                {
+                    "id": "0000004",
+                    "city": "Baltimore",
+                    "name": "Ravens",
+                    "shortName": "BLT"
+                },
+                {
+                    "id": "0000005",
+                    "city": "Buffalo",
+                    "name": "Bills",
+                    "shortName": "BUF"
+                },
+                {
+                    "id": "0000006",
+                    "city": "Cincinnati",
+                    "name": "Bengals",
+                    "shortName": "CNC"
+                },
+                {
+                    "id": "0000007",
+                    "city": "Cleveland",
+                    "name": "Browns",
+                    "shortName": "CLV"
+                }
+            ]
+        },
+        {
+            "url": "leagues/0000000/matchdays",
+            "entities":[
+                {
+                    "number": 1,
+                    "name": "Wildcard Weekend",
+                    "league": {
+                        "sportType": "American Football"
+                    },
+                    "startTime": "Mon Dec 28 2020 20:30:00 GMT+0100",
+                    "endTime": "Mon Dec 29 2020 18:00:00 GMT+0100",
+                    "matches": [
+                        {
+                            "id": "0000000",
+                            "homeTeam": {
+                                "id": "0000000",
+                                "city": "Arizona",
+                                "name": "Cardinals",
+                                "shortName": "ARZ"
+                            },
+                            "awayTeam": {
+                                "id": "0000001",
+                                "city": "Atlanta",
+                                "name": "Falcons",
+                                "shortName": "ATL"
+                            },
+                            "kickoffTime": "Mon Jan 04 2021 20:30:00 GMT+0100"
+                        },
+                        {
+                            "id": "0000001",
+                            "homeTeam": {
+                                "id": "0000002",
+                                "city": "Carolina",
+                                "name": "Panthers",
+                                "shortName": "CAR"
+                            },
+                            "awayTeam": {
+                                "id": "0000003",
+                                "city": "Chicago",
+                                "name": "Bears",
+                                "shortName": "CHI"
+                            },
+                            "kickoffTime": "Mon Jan 04 2021 20:30:00 GMT+0100"
+                        },
+                        {
+                            "id": "0000002",
+                            "homeTeam": {
+                                "id": "0000004",
+                                "city": "Baltimore",
+                                "name": "Ravens",
+                                "shortName": "BLT"
+                            },
+                            "awayTeam": {
+                                "id": "0000005",
+                                "city": "Buffalo",
+                                "name": "Bills",
+                                "shortName": "BUF"
+                            },
+                            "kickoffTime": "Mon Dec 29 2020 16:00:00 GMT+0100"
+                        },
+                        {
+                            "id": "0000003",
+                            "homeTeam": {
+                                "id": "0000006",
+                                "city": "Cincinnati",
+                                "name": "Bengals",
+                                "shortName": "CNC"
+                            },
+                            "awayTeam": {
+                                "id": "0000007",
+                                "city": "Cleveland",
+                                "name": "Browns",
+                                "shortName": "CLV"
+                            },
+                            "kickoffTime": "Mon Dec 28 2020 18:00:00 GMT+0100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "url": "communities",
+            "entities": [
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "Dummy"
+                },
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "Test"
+                },
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "A"
+                },
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "B"
+                },
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "C"
+                },
+                {
+                    "communityName": "DummyCommunity",
+                    "username": "D"
+                },
+                {
+                    "communityName": "TestCommunity",
+                    "username": "Test"
+                }
+            ]
+        },
+        {
+            "url": "communities/DummyCommunity/tipgames",
+            "entities": [
+                {
+                    "id": "0000000",
+                    "communityName": "DummyCommunity",
+                    "league": {
+                        "id": "0000000",
+                        "name": "NFL",
+                        "ruleset": {
+                            "id": "0000000",
+                            "rules": {
+                                "id": "0000000",
+                                "name": "NFL Initial",
+                                "pointsForCorrectWinner": 15,
+                                "pointsForCorrectTurnovers": 5,
+                                "pointsForCorrectOverallScore": 10,
+                                "pointsForCorrectScoreDifference": {
+                                    "low": 5,
+                                    "medium": 10,
+                                    "high": 15
+                                }
+                            }
+                        },
+                        "sportType": "American Football",
+                        "year": "2020"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "communities/TestCommunity/tipgames",
+            "entities": [
+                {
+                    "id": "0000001",
+                    "communityName": "TestCommunity",
+                    "league": {
+                        "id": "0000000",
+                        "name": "NFL",
+                        "ruleset": {
+                            "id": "0000000",
+                            "rules": {
+                                "id": "0000000",
+                                "name": "NFL Initial",
+                                "pointsForCorrectWinner": 15,
+                                "pointsForCorrectTurnovers": 5,
+                                "pointsForCorrectOverallScore": 10,
+                                "pointsForCorrectScoreDifference": {
+                                    "low": 5,
+                                    "medium": 10,
+                                    "high": 15
+                                }
+                            }
+                        },
+                        "sportType": "American Football",
+                        "year": "2020"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "communities/DummyCommunity/tipgames/0000000/tips",
+            "entities": [
+                {
+                    "username": "Dummy",
+                    "match": {
+                        "id": "0000000",
+                        "homeTeam": {
+                            "id": "0000000",
+                            "city": "Arizona",
+                            "name": "Cardinals",
+                            "shortName": "ARZ"
+                        },
+                        "awayTeam": {
+                            "id": "0000001",
+                            "city": "Atlanta",
+                            "name": "Falcons",
+                            "shortName": "ATL"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "< 38.5",
+                        "max": 38.5
+                    },
+                    "scoreDifference": 3,
+                    "turnovers": 3,
+                    "winner": {
+                        "id": "0000000",
+                        "city": "Arizona",
+                        "name": "Cardinals",
+                        "shortName": "ARZ"
+                    }
+                },
+                {
+                    "username": "Dummy",
+                    "match": {
+                        "id": "0000001",
+                        "homeTeam": {
+                            "id": "0000002",
+                            "city": "Carolina",
+                            "name": "Panthers",
+                            "shortName": "CAR"
+                        },
+                        "awayTeam": {
+                            "id": "0000003",
+                            "city": "Chicago",
+                            "name": "Bears",
+                            "shortName": "CHI"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "38.5 - 51.5",
+                        "max": 51.5,
+                        "min": 38.5
+                    },
+                    "scoreDifference": 7,
+                    "turnovers": 1,
+                    "winner": {
+                        "id": "0000002",
+                        "city": "Carolina",
+                        "name": "Panthers",
+                        "shortName": "CAR"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "communities/TestCommunity/tipgames/0000001/tips",
+            "entities": [
+                {
+                    "username": "Test",
+                    "match": {
+                        "id": "0000000",
+                        "homeTeam": {
+                            "id": "0000000",
+                            "city": "Arizona",
+                            "name": "Cardinals",
+                            "shortName": "ARZ"
+                        },
+                        "awayTeam": {
+                            "id": "0000001",
+                            "city": "Atlanta",
+                            "name": "Falcons",
+                            "shortName": "ATL"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "< 38.5",
+                        "max": 38.5
+                    },
+                    "scoreDifference": 15,
+                    "turnovers": 0,
+                    "winner": {
+                        "id": "0000000",
+                        "city": "Arizona",
+                        "name": "Cardinals",
+                        "shortName": "ARZ"
+                    }
+                },
+                {
+                    "username": "Test",
+                    "match": {
+                        "id": "0000001",
+                        "homeTeam": {
+                            "id": "0000002",
+                            "city": "Carolina",
+                            "name": "Panthers",
+                            "shortName": "CAR"
+                        },
+                        "awayTeam": {
+                            "id": "0000003",
+                            "city": "Chicago",
+                            "name": "Bears",
+                            "shortName": "CHI"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "38.5 - 51.5",
+                        "max": 51.5,
+                        "min": 38.5
+                    },
+                    "scoreDifference": 4,
+                    "turnovers": 9,
+                    "winner": {
+                        "id": "0000002",
+                        "city": "Carolina",
+                        "name": "Panthers",
+                        "shortName": "CAR"
+                    }
+                }
+            ]
+        },
+        {
+            "url": "communities/TestCommunity/tipgames/0000000/tips",
+            "entities": [
+                {
+                    "username": "Test",
+                    "match": {
+                        "id": "0000000",
+                        "homeTeam": {
+                            "id": "0000000",
+                            "city": "Arizona",
+                            "name": "Cardinals",
+                            "shortName": "ARZ"
+                        },
+                        "awayTeam": {
+                            "id": "0000001",
+                            "city": "Atlanta",
+                            "name": "Falcons",
+                            "shortName": "ATL"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "< 38.5",
+                        "max": 38.5
+                    },
+                    "scoreDifference": 4,
+                    "turnovers": 3,
+                    "winner": {
+                        "id": "0000000",
+                        "city": "Arizona",
+                        "name": "Cardinals",
+                        "shortName": "ARZ"
+                    }
+                },
+                {
+                    "username": "Test",
+                    "match": {
+                        "id": "0000001",
+                        "homeTeam": {
+                            "id": "0000002",
+                            "city": "Carolina",
+                            "name": "Panthers",
+                            "shortName": "CAR"
+                        },
+                        "awayTeam": {
+                            "id": "0000003",
+                            "city": "Chicago",
+                            "name": "Bears",
+                            "shortName": "CHI"
+                        },
+                        "kickoffTime": "Mon Jan 25 2021 20:30:00 GMT+0100"
+                    },
+                    "overallScore": {
+                        "display": "38.5 - 51.5",
+                        "max": 51.5,
+                        "min": 38.5
+                    },
+                    "scoreDifference": 3,
+                    "turnovers": 3,
+                    "winner": {
+                        "id": "0000002",
+                        "city": "Carolina",
+                        "name": "Panthers",
+                        "shortName": "CAR"
+                    }
+                }
+            ]
+        }
+    ]
+}
