@@ -317,10 +317,10 @@
                     "scoreDifference": 3,
                     "turnovers": 3,
                     "winner": {
-                        "id": "0000000",
-                        "city": "Arizona",
-                        "name": "Cardinals",
-                        "shortName": "ARZ"
+                        "id": "0000001",
+                        "city": "Atlanta",
+                        "name": "Falcons",
+                        "shortName": "ATL"
                     }
                 },
                 {
@@ -349,10 +349,10 @@
                     "scoreDifference": 7,
                     "turnovers": 1,
                     "winner": {
-                        "id": "0000002",
-                        "city": "Carolina",
-                        "name": "Panthers",
-                        "shortName": "CAR"
+                        "id": "0000003",
+                        "city": "Chicago",
+                        "name": "Bears",
+                        "shortName": "CHI"
                     }
                 }
             ]
