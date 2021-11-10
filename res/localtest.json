@@ -234,7 +234,6 @@
             "entities": [
                 {
                     "id": "0000000",
-                    "communityName": "DummyCommunity",
                     "league": {
                         "id": "0000000",
                         "name": "NFL",
@@ -264,7 +263,6 @@
             "entities": [
                 {
                     "id": "0000001",
-                    "communityName": "TestCommunity",
                     "league": {
                         "id": "0000000",
                         "name": "NFL",
