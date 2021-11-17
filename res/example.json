@@ -1,0 +1,29 @@
+{
+    "url": "http://localhost:3000/",
+    "entities": [
+        {
+            "url": "user",
+            "entities": [
+                {
+                    "id": "0",
+                    "name": "Doe",
+                    "firstName": "Jane"
+                },
+                {
+                    "id": "1",
+                    "name": "Doe",
+                    "firstName": "John"
+                }
+            ]
+        },
+        {
+            "url": "address",
+            "entities": [
+                {
+                    "country": "world",
+                    "zip": "00001"
+                }
+            ]
+        }
+    ]
+}
